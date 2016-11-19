@@ -42,7 +42,7 @@ class Application_Magento_Connect
 	{
 		require_once $this->__config->get('pathToMagentoApp');
 		umask(0);
-		Mage::app();
+		Mage::app()->setCurrentStore(0);
 		
 		// - this crashes some installs ?
 		//Mage::app()->loadArea(Mage_Core_Model_App_Area::AREA_FRONTEND);

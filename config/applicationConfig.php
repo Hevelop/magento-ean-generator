@@ -38,13 +38,13 @@ class config
 {
 
 	// define path to Magento app
-	const pathToMagentoApp = '/home/www/dev/magento/app/Mage.php';
+	const pathToMagentoApp = '/home/marcato/Projects/Hevelop/mascheroni/htdocs/app/Mage.php';
 	
 	// define ean export file path and name
-	const pathToExportFile = '/home/www/dev/magento/myexport/eanexporttest.csv';
+	const pathToExportFile = '/home/marcato/Projects/Hevelop/mascheroni/export.csv';
 	
 	// define ean code prefix - country / manufacturer
-	const eanPrefix = '1234567';
+	const eanPrefix = 'MAS';
 
 	
 	public function __construct()

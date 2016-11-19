@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2014 paj@gaiterjones.com
  *
- *	This program is free software: you can redistribute it and/or modify
+ *    This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
  *  (at your option) any later version.
@@ -17,22 +17,20 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  @category   PAJ
- *  @package    
- *  @license    http://www.gnu.org/licenses/ GNU General Public License
- * 	
+ * @category   PAJ
+ * @package
+ * @license    http://www.gnu.org/licenses/ GNU General Public License
+ *
  *
  */
 
-include './config/applicationConfig.php';
+include __DIR__ . '/config/applicationConfig.php';
 
-if (php_sapi_name() === 'cli') { chdir(dirname(__FILE__));} 
+if (php_sapi_name() === 'cli') {
+    chdir(__DIR__);
+}
 
 
 // App
 $_myApp = new Application();
-	unset($_myApp);
-		exit;
-
-
-?>
+unset($_myApp);
